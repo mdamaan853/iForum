@@ -1,0 +1,12 @@
+
+<!-- saved from url=(0022)http://127.0.0.1:8080/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>const http = require("http");
+const port = 8080;
+const server = http.createServer((req, res) =&gt; {
+    res.writeHead(200, { 'content-type': 'text/html' })
+    res.write('<h1>your servre has been created</h1>');
+    res.end();
+});
+server.listen(port, () =&gt; {
+    console.log(`your server has beeen started in port ${port}`)
+})</body></html>
